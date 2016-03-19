@@ -1,0 +1,10 @@
+.gradle/
+.idea/
+bower_components/
+build/
+node_modules/
+src/main/resources/vendors/
+gradle*
+*.iws
+*.ipr
+*.iml
