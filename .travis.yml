@@ -10,8 +10,8 @@ env:
 install: true
 before_script:
   - nvm install lts/*
-  - sudo apt update
-  - sudo apt install curl
+  - sudo apt update -y
+  - sudo apt install -y curl
 
 script:
   - bash gradlew clean build
