@@ -10,14 +10,15 @@ env:
 install: true
 before_script:
   - nvm install lts/*
-  - sudo apt update
-  - sudo install curl
+  - sudo apt update -y
+  - sudo apt install -y python-pip
+  - sudo pip install httpie
 
 script:
   - bash gradlew clean build
   - bash gradlew bootRun &
   - sleep 30
-  - curl http://localhost:8080/
+  - http :8080/
 
 cache:
   directories:
