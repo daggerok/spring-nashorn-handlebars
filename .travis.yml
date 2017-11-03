@@ -10,8 +10,8 @@ env:
 install: true
 before_script:
   - nvm install lts/*
-  - sudo apt update
-  - sudo apt install pip
+  - sudo apt update -y
+  - sudo apt install python-pip -y
   - sudo pip install httpie jq
 
 script:

@@ -7,6 +7,7 @@ src/main/resources/vendors/
 *.iws
 *.ipr
 *.iml
+out/
 .DS_Store
 yarn.lock
 package-lock.json
