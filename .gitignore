@@ -4,7 +4,10 @@ bower_components/
 build/
 node_modules/
 src/main/resources/vendors/
-gradle*
 *.iws
 *.ipr
 *.iml
+.DS_Store
+yarn.lock
+package-lock.json
+*.log
