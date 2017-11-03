@@ -19,7 +19,7 @@ public class AppCfg {
     scriptTemplateConfigurer.setEngineName("nashorn");
     scriptTemplateConfigurer.setScripts(
         "/static/polyfill.js",
-        "/vendors/handlebars/handlebars.js",
+        "/webjars/handlebars/4.0.5/handlebars.min.js",
         "/static/render.js"
     );
     scriptTemplateConfigurer.setRenderFunction("render");
