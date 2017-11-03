@@ -11,7 +11,7 @@ install: true
 before_script:
   - nvm install lts/*
   - sudo apt update
-  - sudo install curl
+  - sudo apt install curl
 
 script:
   - bash gradlew clean build
