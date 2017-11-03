@@ -3,12 +3,23 @@ jdk:
   - oraclejdk8
   - openjdk8
 
+env:
+  global:
+    TERM=dumb
+
 install: true
-before_script: nvm install tls/*
+before_script:
+  - nvm install lts/*
+  - sudo apt update
+  - sudo apt install pip
+  - sudo pip install httpie jq
 
 script:
   - npm i
   - bash gradlew clean build
+  - bash gradlew bootRun &
+  - sleep 30
+  - http :8080/
 
 cache:
   directories:
